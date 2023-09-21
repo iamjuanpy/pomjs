@@ -1,0 +1,23 @@
+# Define the paths to your source and destination projects
+$sourceProjectPath = ""
+$destinationProjectPath = ""
+
+# Navigate to the source project directory
+Set-Location $sourceProjectPath
+
+# Run npm pack to create a tarball of the project
+npm pack
+
+$tarballFileName = Get-ChildItem "*.tgz"
+
+# Move the generated tarball to the destination project directory
+Move-Item $tarballFileName "$destinationProjectPath"
+
+# Navigate to the destination project directory
+Set-Location $destinationProjectPath
+
+# Install the package from the tarball using npm
+npm install ".\pomjs-1.0.0.tgz"
+
+# Optionally, you can remove the tarball after installation
+Remove-Item ".\pomjs-1.0.0.tgz"
