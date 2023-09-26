@@ -54,7 +54,7 @@ Librería para React para el uso de Web Templating
 
       ![Alt text](readme/image-1.png)
 
-    - El resultado (de momento) es un
+    - El resultado (de momento) es en donde se llamo a la función se incluye:
 
       ```js
 
