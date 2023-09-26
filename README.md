@@ -33,6 +33,7 @@ Librería para React para el uso de Web Templating
    - Correr el proyecto Vite
      <code>npm run dev</code>
    - Crear archivos en carpeta <i>public</i>
+
      ![Alt text](readme/image.png)
 
    - Importar la librería
@@ -47,5 +48,4 @@ Librería para React para el uso de Web Templating
        return <>{pom("/ruta/archivo.pom")}</>;
      }
      ```
-
-   ![Alt text](readme/image-1.png)
+     ![Alt text](readme/image-1.png)
