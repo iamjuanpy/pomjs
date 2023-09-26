@@ -6,8 +6,7 @@
   "bin": "./lib/cli.js",
   "files": [
     "./lib",
-    "./package.json",
-    "./README.md"
+    "./package.json"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
