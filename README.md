@@ -38,14 +38,24 @@ Librería para React para el uso de Web Templating
 
    - Importar la librería
 
-     ````js
-     import { pom } from "pomjs";```
-     ````
+     ```js
+     import { pom } from "pomjs";
+     ```
 
    - Instanciar las templates en componentes siguiendo la sintaxis:
+
      ```js
      function Componente() {
        return <>{pom("/ruta/archivo.pom")}</>;
      }
      ```
+
      ![Alt text](readme/image-1.png)
+
+   - El resultado (de momento) es un
+
+   ```js
+    <h1>
+      {contenido del archivo}
+    </h1>
+   ```
