@@ -28,34 +28,38 @@ Librería para React para el uso de Web Templating
 
 <br>
 
-2. Usar
+2.  Usar
 
-   - Correr el proyecto Vite
-     <code>npm run dev</code>
-   - Crear archivos en carpeta <i>public</i>
+    - Correr el proyecto Vite
+      <code>npm run dev</code>
+    - Crear archivos en carpeta <i>public</i>
 
-     ![Alt text](readme/image.png)
+      ![Alt text](readme/image.png)
 
-   - Importar la librería
+    - Abrir el archivo <i>App.jsx</i> o cualquier otro que represente un componente
 
-     ```js
-     import { pom } from "pomjs";
-     ```
+    - Importar la librería
 
-   - Instanciar las templates en componentes siguiendo la sintaxis:
+      ```js
+      import { pom } from "pomjs";
+      ```
 
-     ```js
-     function Componente() {
-       return <>{pom("/ruta/archivo.pom")}</>;
-     }
-     ```
+    - Instanciar las templates en componentes siguiendo la sintaxis:
 
-     ![Alt text](readme/image-1.png)
+      ```js
+      function Componente() {
+        return <>{pom("/ruta/archivo.pom")}</>;
+      }
+      ```
 
-   - El resultado (de momento) es un
+      ![Alt text](readme/image-1.png)
 
-   ```js
-    <h1>
-      {contenido del archivo}
-    </h1>
-   ```
+    - El resultado (de momento) es un
+
+      ```js
+
+          <h1>
+              {contenido del archivo}
+          </h1>
+
+      ```
