@@ -1,6 +1,6 @@
 # 😺 pomJS 😺
 
-Librería para React para el uso de Web Templating
+Librería para React para permitir el uso de Web Templating
 
 ## Instalación y Uso
 
@@ -14,8 +14,9 @@ Librería para React para el uso de Web Templating
 
 <br>
 
-1. Pack
+1. Empaquetado de la librería
 
+   - Clonar este repositorio
    - Instalar dependencia:
      <code>npm install</code>
    - En Windows completar el script <b>test.ps1.example</b> con el nombre de los directorios de la librería y del proyecto y ejecutar.
@@ -32,7 +33,7 @@ Librería para React para el uso de Web Templating
 
     - Correr el proyecto Vite
       <code>npm run dev</code>
-    - Crear archivos en carpeta <i>public</i>
+    - Crear archivos en carpeta <i>public</i> o en direcciones públicas del server
 
       ![Alt text](readme/image.png)
 
@@ -41,25 +42,23 @@ Librería para React para el uso de Web Templating
     - Importar la librería
 
       ```js
-      import { pom } from "pomjs";
+      import { PomView } from "pomjs";
       ```
 
-    - Instanciar las templates en componentes siguiendo la sintaxis:
+    - Instanciar las templates en componentes siguiendo esta sintaxis, incluyendo la dirección de la template y las variables de estado que queremos instanciar:
 
       ```js
       function Componente() {
-        return <>{pom("/ruta/archivo.pom")}</>;
+        return (
+          <div>
+            <PomView filePath="/ruta/archivo.pom" arg1={...} arg2={...} ... />
+          </div>
+        );
       }
       ```
 
-      ![Alt text](readme/image-1.png)
-
-    - El resultado (de momento) es en donde se llamo a la función se incluye:
+    - El resultado es una traducción a JSX de las instrucciones de la template:
 
       ```js
-
-          <h1>
-              {contenido del archivo}
-          </h1>
-
+      <div>{traduccion}</div>
       ```
