@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "A library for using templates in React",
   "main": "./lib/index.js",
-  "bin": "./lib/cli.js",
   "files": [
     "./lib",
     "./package.json"
@@ -13,8 +12,14 @@
   },
   "author": "Juan Pablo Sumski",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "htmlparser2": "^9.0.0",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "htmlparser2": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
